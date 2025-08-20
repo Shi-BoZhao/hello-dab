@@ -30,7 +30,3 @@ jobs:
 
       - name: Deploy
         run: databricks bundle deploy --target "${TARGET}"
-
-      # デプロイできたら実行もしてみる（任意）
-      - name: Run job
-        run: databricks bundle run hello_job --target "${TARGET}"
